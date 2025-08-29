@@ -1,0 +1,44 @@
+import React from 'react';
+import ServiceCard from './ServiceCard';
+
+const App = () => {
+  return (
+    <div>
+      <ServiceCard
+        title="Desenvolvimento Web"
+        description="Desenvolvimento de aplicações web personalizadas"
+        icon="fas fa-code"
+      />
+      <ServiceCard
+        title="Design Gráfico"
+        description="Criação de designs gráficos personalizados"
+        icon="fas fa-palette"
+      />
+    </div>
+  );
+};
+
+
+
+.service-card {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-card .icon {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+}
